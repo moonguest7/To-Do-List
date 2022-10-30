@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+    background: #396afc;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2948ff, #396afc) fixed;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2948ff, #396afc) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+* {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.input-field {
+    padding-top: 25px;
+    margin: 30px auto 0 auto;
+    background-color: white;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+@media (max-width: 400px) {
+    .input-field {
+        width: 90%;
+    }
+}
+
+#items {
+    padding: 0;
+    margin: auto;
+    height: 350px;
+    max-width: 400px;
+    overflow: scroll;
+}
+
+#list-item-container {
+    padding: 10px 0 10px 0;
+    margin: 5px auto 5px auto;
+    width: 80%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+}
+
+#user-input {
+    height: 23px;
+    width: 70%;
+    border-width: 0px;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+    
+}
+
+::placeholder {
+    color: darkgray;
+}
+
+#user-input:focus {
+    outline: none;
+}
+
+#add-item {
+    width: 30px;
+    height: 28px;
+    border: none;
+}
+
+#delete-item {
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+
+#first-div-item {
+    list-style-type: none;
+    overflow: auto;
+}
+
+button:hover {
+    background-color: #C8C8C8;
+}
+
+#clear-items {
+    border: none;
+    margin: 10px auto 25px auto;
+    padding: 5px 20px;
+}
